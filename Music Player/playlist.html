@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Playlist</title>
+
+    <meta charset="UTF-8">
+    <!-- set viewport meta property -->
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="assets/css/playlist.css">
+
+    <!-- use the below to use font-awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- favicon -->
+    <link rel="icon" href="musical-note.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="bg-container">
+        <header class="page-header">
+            <div class="logoAndTitle-container">
+                <img src="music.jpg" />
+                <p class="titlepara">Favourites</p>
+            </div>
+            <div class="searchboxAndProfile-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search" />
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <i class="fas bell fa-bell"></i>
+                <img class="profile-photo" src="assets/images/profilepic.jpg" />
+            </div>
+        </header>
+
+        <input style="display: none;" type="checkbox" id="play-btn-checkbox1" />
+
+        <input style="display: none;" type="checkbox" id="play-btn-checkbox2" />
+
+        <input style="display: none;" type="checkbox" id="play-btn-checkbox3" />
+
+        <div class="for-responsiveness">
+            <main>
+                <div class="playlist-card-container">
+                    <div class="blur-effect-container">
+                        <img src="lofi.png" />
+                        <div class="blur-effect">
+
+                        </div>
+                    </div>
+
+                    <div class="playlist-content-container">
+                        <div style="display: flex;justify-content: space-between;align-items: center;">
+                            <p class="p1" style="color: #FDFDFD; font-size: 1.5rem; font-weight: bold;">Lofi</p>
+                            <p class="p2" style="color: #A1A3B3; font-size: 1rem;">2.8K Following</p>
+                        </div>
+                        <p class="p3" style="color: #A1A3B3; font-size: 1rem;margin-top: -0.5rem;">Bollywood Lofi</p>
+                        <p class="p4" style="color: #A1A3B3; font-size: 0.9rem;margin-bottom: 3rem;margin-top: -0.4rem;">Low-fidelity music, or lo-fi, is music that is recorded with intentional imperfections, such as misplayed notes, environmental noise, low hum, or phonographic audio imperfections.</p>
+
+                        <div>
+                            <button class="play-all-btn">Play All</button>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <p class="p5" style="color: #767B90; font-size: 0.9rem;">2k Tracks | All time Hits</p>
+                    </div>
+                </div>
+
+                <div id="queue-1" class="queue-container">
+                    <div class="queue-elements-container">
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">01</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofi.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Tum Mile (Lofi Flip)</p>
+                                    <p class="queue-artist-name">KSW
+                                        , 
+                                        Neeraj Shridhar
+                                         & 
+                                        Pritam
+                                         • 
+                                        Tum Mile (Lofi Flip)
+                                         • 
+                                        4:03</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                                                <div class="queue-element">
+                            <div class="song-image-container">
+                                <i class="fas currently-on-song fa-stream"></i>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofi2.webp" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Surili Akhiyon Wale (slowed & reverb)</p>
+                                    <p class="queue-artist-name">Kalaiya
+                                        • 
+                                       Surili Akhiyon Wale (slowed & reverb)
+                                        • 
+                                       6:09</p>
+                                </div>
+                            </div>
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">03</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofibeats.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Zara Zara - LoFi Flip</p>
+                                    <p class="queue-artist-name">Bombay Jayashri
+                                        • 
+                                       59K views
+                                        • 
+                                       19:54</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">04</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofi.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Tu Chahiye - Atif Aslam || Slowed And Reverbed ( Lofi Version )</p>
+                                    <p class="queue-artist-name">Neerajan
+                                        • 
+                                       480K views
+                                        • 
+                                       4:57</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">05</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofi2.webp" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Kesariya [Slowed+Reverb] Full Song | Arijit Singh | Lofi | Textaudio | Revibe</p>
+                                    <p class="queue-artist-name">REVIBE
+                                        • 
+                                       6.9M views
+                                        • 
+                                       4:46</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">06</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofibeats.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Jhoom (Lofi) - JalRaj | Ali Zafar | Latest Hindi Cover Song 2022</p>
+                                    <p class="queue-artist-name">JalRaj
+                                        • 
+                                       1.3M views
+                                        • 
+                                       3:00</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">07</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofi.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Yeh Raaten Yeh Mausam - Lofi</p>
+                                    <p class="queue-artist-name">Sachin Gupta
+                                        & 
+                                       Sanam
+                                        • 
+                                       Sleep Lofi Hits
+                                        • 
+                                       3:09</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">08</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofi2.webp" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Chammak Challo - Lofi Remix Song</p>
+                                    <p class="queue-artist-name">Ra51 Lofi
+                                        • 
+                                       2.2M views
+                                        • 
+                                       4:35</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">09</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofibeats.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Saibo Lofi Flip | VIBIE | Bollywood Lo-Fi | Shor In The City | Sony Music India</p>
+                                    <p class="queue-artist-name">Sony Music India
+                                        • 
+                                       230K views
+                                        • 
+                                       2:28</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">10</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/lofi.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Tera Hua (Lofi)</p>
+                                    <p class="queue-artist-name">Dj Ari Nation
+                                        • 
+                                       369K views
+                                        • 
+                                       4:05</p>
+                                </div>
+                            </div>
+
+                            <div class="icons-container">
+                                <i class="far wishlist-icon fa-heart"></i>
+                                <i class="fas add-icon fa-plus"></i>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </main>
+
+            <aside>
+                <div class="latest-release-container">
+                    <div class="latest-release-header">
+                        <p>Similar Artists</p>
+                        <a href="">View All</a>
+                    </div>
+                    <div class="latest-release-cards-container">
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox1"><i class="fas latest-release-play-btn fa-play play-1"></i><i class="latest-release-pause-btn fas fa-pause pause-1"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">1 Hrs of Calm Music</p>
+                                    <p class="date">3M Followers</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox1"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox1">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:44</p>
+                            </div>
+
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox3"><i class="fas latest-release-play-btn fa-play play-3"></i><i class="latest-release-pause-btn fas fa-pause pause-3"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">Gentle Piano Keys and Lofi</p>
+                                    <p class="date">23M Followers</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox3"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox3">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:44</p>
+                            </div>
+
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox2"><i class="fas latest-release-play-btn fa-play play-2"></i><i class="latest-release-pause-btn fas fa-pause pause-2"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">Soulful</p>
+                                    <p class="date">2.5K Followers</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox2"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox2">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:44</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="queue-2" class="queue-container">
+                    <div class="queue-header">
+                        <p>Recently Played</p>
+                        <div class="queue-btn-container">
+
+                            <!-- here label is acting as a button for dropdown effect -->
+                            <a href="">View All</a>
+                        </div>
+                    </div>
+
+                    <div class="queue-elements-container">
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">01</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/humnava.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Humnava Mere</p>
+                                    <p class="queue-artist-name">Jubin Nautiyal</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <i class="fas currently-on-song fa-stream"></i>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/uska hi banana.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Uska Hi Banana</p>
+                                    <p class="queue-artist-name">Arijit Singh</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">03</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/sajda.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Sajda</p>
+                                    <p class="queue-artist-name">Shankar–Ehsaan–Loy</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">04</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/dil ka rishta.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Dil Ka Rishta</p>
+                                    <p class="queue-artist-name">Alka Yagnik,Kumar Sanu, Udit Narayan</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">05</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/laal ishq.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Laal Ishq</p>
+                                    <p class="queue-artist-name">Manas Tripati</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">06</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/tere nam.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Tere Naam</p>
+                                    <p class="queue-artist-name">Alka Yagnik</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">07</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/labon ko.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Labon ko</p>
+                                    <p class="queue-artist-name">K.K</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">08</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/tera mera rishta.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Tera Mera Rishta</p>
+                                    <p class="queue-artist-name">Himesh Reshmi</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">08</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/dilnashin.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Dilnashin Dilnashin</p>
+                                    <p class="queue-artist-name">K.K</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>
+                        <div id="queue-element-2" class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">09</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="assets/queue/tera mera rishta.jpg" />
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Tera Mera Rishta</p>
+                                    <p class="queue-artist-name">Himesh Reshmi</p>
+                                </div>
+                            </div>
+
+                            <i class="far wishlist-icon fa-heart"></i>
+                        </div>                       
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <!-- Song Thumnail, Title, Singer -->
+            <div id="footer-song-info">
+                <div id="footer-song-image"></div>
+                <div id="footer-song-name">
+                    <span>Humdard</span>
+                    <span class="subtitle">Arijit Singh</span>
+                </div>
+                <div>
+                    <span>
+                    <i class="far fa-heart subtitle"></i>
+                </span>
+                    <span>
+                    <i class="fas fa-thumbs-down subtitle"></i>
+                </span>
+                </div>
+            </div>
+
+            <!-- Contains Player Controls: Play, Pause, Next, Previous, Shuffle and Repeat with Slider -->
+            <div id="player">
+
+                <div id="player-control">
+                    <div><i class="fas fa-random" style="color:white;"></i></div>
+                    <div><i class="fas fa-step-backward" style="color:white;"></i></div>
+                    <div><i class="far fa-pause-circle" style="font-size: 2rem; color:white;"></i></div>
+                    <div><i class="fas fa-step-forward" style="color:white;"></i></div>
+                    <div><i class="fas fa-redo" style="color:white;"></i></div>
+                </div>
+
+                <div id="player-slider-container">
+                    <div class="subtitle">
+                        0:00
+                    </div>
+
+                    <input type="range" min="0" max="100" value="25">
+
+                    <div class="subtitle">
+                        4:44
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volume buttom, Expand button -->
+            <div class="player-extras">
+                <div class="volume-container">
+                    <span><i class="fas fa-volume-up"></i></span>
+                    <input type="range" min="0" max="100" value="50" class="slider" id="volume-slider">
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
